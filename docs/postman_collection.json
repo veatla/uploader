@@ -1,0 +1,79 @@
+{
+	"info": {
+		"_postman_id": "94893e99-10d4-45fe-8cd3-8a138ea2875b",
+		"name": "Converter",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "15622294"
+	},
+	"item": [
+		{
+			"name": "Upload&Convert",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/C:/Users/nurzhan/Videos/Movavi Screen Recorder/11111111111.mov"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:4000/upload",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"upload"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Download Uploaded",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/C:/Users/nurzhan/Videos/Movavi Screen Recorder/ScreenRecorderProject1.mkv"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:4000/upload/:filename",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"upload",
+						":filename"
+					],
+					"variable": [
+						{
+							"key": "filename",
+							"value": "5d0583dd9a49ed1d5f87fecd20987a42-ScreenRecorderProject1.mp4",
+							"description": "filename"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
