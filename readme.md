@@ -11,7 +11,7 @@ npm run start
 ```
 
     /docs - Files to Docs
-        /openapi.yml - For OpenAPI Docs(http://localhost:4000)
+        /openapi.yml - For OpenAPI Docs(http://localhost:4000/docs)
         /postman_collection.json - Postman collection if you prefer use Postman
     /static - Converted Files
     /uploads - Uploaded Files
